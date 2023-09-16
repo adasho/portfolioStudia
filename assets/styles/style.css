@@ -124,6 +124,10 @@ q:after {
   content: none;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-family: "forma-djr-banner", sans-serif;
   font-weight: 800;
@@ -135,7 +139,7 @@ html {
 }
 
 body {
-  height: calc(100vh - 24px);
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -177,6 +181,7 @@ h2 {
   height: 100%;
   max-width: 1080px;
   padding: 12px;
+  padding-bottom: 72px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -226,7 +231,7 @@ h2 {
 .zdjecie img {
   width: 100%;
   height: auto;
-  max-height: 80vh;
+  max-height: 70vh;
   -o-object-fit: contain;
      object-fit: contain;
   -o-object-position: left;
